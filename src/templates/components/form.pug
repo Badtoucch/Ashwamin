@@ -1,0 +1,21 @@
+.form
+    .form__wrapper
+        .form__title Внимание! 
+        .form__.form__subtitle Только сегодня 
+            span.date-0.date--accent(data-format="dd month") 22 октября
+        .price цена:  <span class="x_price_current form__price_current">196</span> <span class="x_currency form__current">руб</span><span class="form__star">*</span>
+        form.x_order_form(action="/submit", method="post")
+            .form__name
+                img(src="img/form_name_icon.png", alt="image")
+                input.input(type="text", name="name", placeholder="Мое имя", required)
+            .form__phone
+                img(src="img/form_phone_icon.png", alt="image")
+                input.input(type="tel", name="phone", placeholder="Мой телефон", required)
+            button.btn.form-btn Заказать
+        .form__attention *цена за порцию
+        .form__text Осталось 
+            span.lastpack 10
+            |  упаковок по Акции
+    .form__left
+      .form__lock Ваши данные защищены!
+

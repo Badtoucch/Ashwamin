@@ -1,0 +1,17 @@
+header.header
+	.container
+		.header__wrap
+				.header__logo.logo
+					img(src="img/logo.png", alt="Ashwamin")
+				ul.header__info
+					li.info__item.info__line
+						a.info__link(href="#composition")
+							img.info__icon(src="img/header-2.png", alt="header-1")
+							p.info__text Состав
+					li.info__item.info__line
+						a.info__link(href="#reviews")
+							img.info__icon(src="img/header-1.png", alt="header-2")
+							p.info__text Отзывы
+					li.info__item.header__timer
+						include timer
+				button.header__btn.btn.ever-popup-btn(type="button") Заказать

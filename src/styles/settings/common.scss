@@ -1,0 +1,125 @@
+body {
+  min-width: 320px;
+  min-height: 100vh;
+	font-family: $main-font;
+  font-size: 16px;
+  color: #332f2f;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  overflow: hidden;
+}
+
+button {
+  display: block;
+  padding: 0;
+}
+br{
+	line-height: 1;
+}
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @include r(1219) {
+    width: 1024px;
+  }
+
+  @include r(1023) {
+    width: 768px;
+    padding: 0 10px;
+  }
+
+  @include r(767) {
+    width: 640px;
+  }
+
+  @include r(639) {
+    width: 480px;
+  }
+
+  @include r(479) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+  color: #222;
+  text-align: center;
+
+  @include r(1219) {
+    font-size: 40px;
+  }
+
+  @include r(1023) {
+    font-size: 38px;
+  }
+
+  @include r(767) {
+    font-size: 34px;
+  }
+
+  @include r(639) {
+    font-size: 30px;
+  }
+
+  @include r(479) {
+    font-size: 26px;
+  }
+}
+
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.accent {
+  color: #729d22;
+}
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.bg {
+  background: url(../img/bg.jpg) no-repeat center / cover;
+}
+
+.text-green{
+  color: $color-green;
+}
+
+
+.accent-title{
+	color: #d6123c;
+}

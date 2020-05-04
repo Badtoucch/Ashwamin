@@ -1,0 +1,255 @@
+.promo
+	background-color: #f4f4f4
+	padding-top: 81px
+	+r(1219)
+		padding-top: 60px
+	+r(1023)
+		padding-top: 40px
+		padding-bottom: 40px
+	+r(767)
+		padding: 30px 0
+	+r(479)
+		padding: 25px 0
+	&-end
+		padding-top: 110px
+		+r(1219)
+			padding-top: 60px
+	&-content
+		display: flex
+		justify-content: flex-end
+		position: relative
+		+r(1023)
+			justify-content: center
+			flex-wrap: wrap
+			align-items: center
+		+r(479)
+			padding-left: 5px
+			padding-right: 5px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: -109px
+			width: 494px
+			height: 656px
+			background: url(../img/promo-girl.png) no-repeat center
+			background-size: contain
+			+r(1219)
+				left: -168px
+				width: 513px
+				height: 554px
+			+r(1023)
+				display: none
+	&__title
+		color: #222
+		font-weight: 900
+		position: relative
+		top: -4px
+		left: 0px
+		+rm(1024)
+			text-align: left
+			font-size: 42px
+		+rm(1220)
+			line-height: 1
+			font-size: 52px
+		+r(1219)
+			top: 0
+			left: 0
+	&__subtitle
+		margin-top: 14px
+		color: #444
+		font-family: Roboto
+		font-size: 24px
+		line-height: 30px
+		+r(1219)
+			font-size: 21px
+			line-height: normal
+			margin-top: 15px
+		+r(1023)
+			text-align: center
+			margin-top: 7px
+			font-size: 22px
+		+r(767)
+			font-size: 20px
+		+r(479)
+			font-size: 19px
+	&__info
+		max-width: 405px
+		width: 100%
+		margin-right: 28px
+		+r(1219)
+			margin-right: 18px
+		+r(1023)
+			width: 100%
+			display: block
+			order: 1
+			max-width: 100%
+			margin-right: 0
+	&-list
+		margin-top: 40px
+		+r(1219)
+			margin-top: 26px
+		+r(1023)
+			margin-top: 20px
+			display: flex
+			justify-content: center
+			margin-bottom: 60px
+		+r(767)
+			flex-direction: column
+			max-width: 340px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 25px
+			margin-top: 15px
+		+r(639)
+			margin-bottom: 45px
+		&__item
+			padding-left: 63px
+			color: #353434
+			font-size: 20px
+			font-weight: 700
+			line-height: 25px
+			position: relative
+			+r(1023)
+				font-size: 19px
+				line-height: normal
+				padding-left: 54px
+			+r(767)
+				padding-left: 0
+				padding-top: 40px
+				text-align: center
+			+r(767)
+				padding-left: 40px
+				padding-top: 0
+				text-align: left
+			&::before
+				content: ''
+				position: absolute
+				top: 2px
+				left: 2px
+				background: url(../img/check.png) no-repeat center
+				width: 42px
+				height: 42px
+				+r(1023)
+					top: 0
+				+r(767)
+					left: 50%
+					transform: translateX(-50%)
+					top: -12px
+					width: 32px
+					height: 32px
+					background-size: contain
+				+r(767)
+					left: 0
+					transform: none
+					top: -5px
+			&:not(:last-child)
+				margin-bottom: 18px
+				+r(1023)
+					margin-bottom: 0
+					margin-right: 15px
+				+r(767)
+					margin-bottom: 15px
+					margin-right: 0
+			&--small 
+				color: #444
+				font-size: 20px
+				font-weight: 400
+				display: block
+				+r(1023)
+					font-size: 16px
+					display: inline
+	&__quality 
+		margin-top: 57px
+		margin-bottom: 58px
+		+r(1219)
+			margin-top: 30px
+			margin-bottom: 70px
+		+r(1023)
+			position: relative
+			margin-left: -40px
+			margin-bottom: 0px
+			+r(1023)
+				display: none
+		+r(767)
+			margin-left: 30px
+			margin-top: 110px
+			margin-bottom: -0px
+		+r(639)
+			margin-top: 15px
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 0
+	&-product
+		position: relative
+		width: 438px
+		margin-right: 25px
+		+r(1219)
+			margin-right: 10px
+			width: 100%
+		+r(1023)
+			width: auto
+			order: 2
+			margin-right: 25px
+			margin-bottom: 25px
+		+r(767)
+			margin-right: 15px
+			margin-top: 4px
+		+r(639)
+			margin-top: 20px
+			margin-right: 0
+			margin-bottom: 10px
+		+r(479)
+			margin-bottom: 0
+			margin-top: 10px
+		&__pack
+			position: absolute
+			bottom: 0px
+			right: -109px
+			+r(1219)
+				bottom: -70px
+				max-width: 230px
+				right: -98px
+			+r(1023)
+				position: static
+				margin-left: auto
+				margin-right: auto
+			+r(767)
+				width: 333px
+			+r(479)
+				width: 100%
+				max-width: 220px
+			&::before
+				content: ''
+				position: absolute
+				top: -29px
+				left: 38px
+				background: url(../img/quality-pack.png) no-repeat center / contain
+				width: 90px
+				height: 90px
+				border-radius: 50%
+			
+				+r(1219)
+					width: 80px
+					height: 80px
+					left: 27px
+					background-size: contain
+				+r(1023)
+					left: 35px
+				+r(767)
+					width: 75px
+					height: 75px
+		&__quality
+			display: none
+			+r(1023)
+				display: block
+				margin-top: 10px
+			+r(639)
+				display: flex
+				justify-content: center
+				margin-bottom: 30px
+	&__form
+		order: 3
+.last-block
+	+rm(1024)
+		padding-top: 60px

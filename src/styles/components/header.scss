@@ -1,0 +1,159 @@
+.header {
+  background-color: #ea5b0c;
+position: relative;
+z-index: 5;
+  &__wrap {
+    padding: 17px 0 19px;
+    display: flex;
+    align-items: center;
+
+    @include r(1219) {
+			justify-content: space-between;
+			padding-bottom: 17px;
+    }
+
+    @include r(1023) {
+     
+      
+    }
+
+    @include r(639) {
+      padding: 17px 30px 14px;
+    }
+
+    @include r(479) {
+      flex-direction: column;
+    }
+  }
+}
+
+.header__info {
+	display: flex;
+	margin-left: auto;
+align-items: center;
+  @include r(1023) {
+    display: none;
+  }
+}
+.header__timer{
+	display: flex;
+	align-items: center;
+	.timer__title{
+		margin-right: 21px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #fff;
+		@include r(1219) {
+		margin-right: 7px;
+		}
+	}
+}
+
+.header__logo {
+	margin-right: auto;
+	color: #fff;
+	text-align: center;
+	border-radius: 7px;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 1;
+	letter-spacing: 3.72px;
+  @include r(1219) {
+		margin-right: 0;
+		font-size: 24px;
+		padding: 5px 13px 5px 13px;
+	}
+	
+  @include r(1023) {
+  }
+	
+  @include r(639) {
+		}
+  @include r(479) {
+		margin-bottom: 0px;
+	
+  }
+}
+
+.header__btn {
+  max-width: 160px;
+	margin-left: 27px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+  font-size: 21px;
+  @include r(1219) {
+    margin-left: 10px;
+	}
+	@include r(479) {
+		margin-left: 0px;
+		display: none;
+	}
+	&:hover{
+		border-width: 2px;
+	}
+}
+
+
+
+.info__link {
+  display: flex;
+  align-items: center;
+  color: #222;
+}
+
+.info__link:hover {
+ text-decoration: none;
+ .info__text:before{
+	 opacity: 0;
+ }
+}
+
+.info__item, .info__text {
+	position: relative;
+}
+.info__text{
+	font-size: 16px;
+font-weight: 700;
+color: #fff;
+}
+// .info__text:before {
+// 	content: '';
+// 	position: absolute;
+// 	width: 99%;
+// 	height: 2px;
+// 	bottom: -1px;
+// 	left: 2px;
+// 	background: url(../img/point.png) repeat-x left center;
+// 	background-size: 5px 5px;
+// 	-webkit-transition: .3s;
+// 	transition: .3s;
+// }
+
+.info__item:not(:last-of-type) {
+  padding-right: 41px;
+  margin-right: 37px;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		width: 1px;
+height: 38px;
+background-color: #e1e1e1;
+	}
+
+  @include r(1219) {
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+}
+
+.info__icon {
+  margin-right: 13px;
+  flex-shrink: 0;
+}
+
+.menu__body .info__timer{
+	display: none;
+}

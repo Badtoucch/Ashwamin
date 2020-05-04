@@ -1,0 +1,13 @@
+// основные настройки
+@import "settings/index";
+// библиотеки
+@import "libs/index";
+// компоненты
+@import "components/timer";
+@import "components/form";
+@import "components/btn";
+@import "components/header";
+@import "components/promo";
+@import "components/footer";
+// паддинг секций (импортируем последним для правильного каскадирования стилей)
+@import "settings/padding";
