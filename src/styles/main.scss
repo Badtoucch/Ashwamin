@@ -10,5 +10,6 @@
 @import "components/promo";
 @import "components/hit";
 @import "components/footer";
+@import "components/section2.scss";
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";
