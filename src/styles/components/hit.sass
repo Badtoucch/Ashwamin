@@ -1,0 +1,86 @@
+.hit
+	padding: 202px 0 95px
+	position: relative
+	+rm(1024)
+		padding-top: 110px !important
+	+rm(1220)
+		padding-top: 202px !important
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 1170px
+		height: 1px
+		background-color: #e8e8e8
+	&-list
+		margin-top: 57px
+		display: flex
+		justify-content: space-between
+		+r(1219)
+			margin-top: 40px
+		+r(1023)
+			margin-top: 25px
+			flex-wrap: wrap
+		+r(479)
+			flex-direction: column
+			align-items: center
+			justify-content: center
+	&-item
+		width: 23.076%
+		+r(1023)
+			width: 48%
+			margin-bottom: 20px
+		+r(479)
+			max-width: 240px
+			width: 100%
+		&__img
+			display: flex
+			justify-content: center
+			width: 100%
+			border-radius: 4px
+			border: 1px solid #dddddd
+			padding: 0 15px
+		&__name
+			margin-top: 29px
+			display: flex
+			justify-content: center
+			align-items: center
+			min-height: 57px
+			+r(1219)
+				margin-top: 20px
+			+r(1023)
+				margin-top: 15px
+				min-height: 45px
+			+r(479)
+				margin-top: 10px
+			img
+				+r(1023)
+					max-width: 40px
+		&__title
+			color: #47342e
+			font-size: 22px
+			font-weight: 700
+			line-height: 1
+			margin-left: 15px
+			+r(1023)
+				font-size: 20px
+				margin-left: 10px
+	&__attention
+		margin-top: 59px
+		color: #47342e
+		font-size: 22px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		+r(1219)
+			margin-top: 40px
+		+r(1023)
+			margin-top: 5px
+			font-size: 20px
+		+r(767)
+			margin-top: 0
+		&--accent
+			color: #f92222
+			font-weight: bold
