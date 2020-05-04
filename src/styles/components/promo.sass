@@ -1,6 +1,6 @@
 .promo
 	background-color: #f4f4f4
-	padding-top: 81px
+	padding-top: 61px
 	+r(1219)
 		padding-top: 60px
 	+r(1023)
@@ -29,9 +29,9 @@
 			content: ''
 			position: absolute
 			bottom: 0
-			left: -109px
-			width: 494px
-			height: 656px
+			left: -193px
+			width: 562px
+			height: 612px
 			background: url(../img/promo-girl.png) no-repeat center
 			background-size: contain
 			+r(1219)
@@ -41,26 +41,29 @@
 			+r(1023)
 				display: none
 	&__title
-		color: #222
-		font-weight: 900
+		font-weight: 700
+		text-transform: uppercase
 		position: relative
 		top: -4px
 		left: 0px
 		+rm(1024)
 			text-align: left
-			font-size: 42px
+			font-size: 68px
 		+rm(1220)
 			line-height: 1
-			font-size: 52px
+			font-size: 80px
 		+r(1219)
 			top: 0
 			left: 0
 	&__subtitle
-		margin-top: 14px
-		color: #444
+		margin-top: 17px
 		font-family: Roboto
-		font-size: 24px
-		line-height: 30px
+		font-size: 28px
+		line-height: 32px
+		font-weight: 700
+		border-bottom: 1px solid #ea5b0c
+		border-top: 1px solid #ea5b0c
+		padding: 20px 0 23px
 		+r(1219)
 			font-size: 21px
 			line-height: normal
@@ -71,12 +74,13 @@
 			font-size: 22px
 		+r(767)
 			font-size: 20px
+			padding: 15px 0
 		+r(479)
 			font-size: 19px
 	&__info
 		max-width: 405px
 		width: 100%
-		margin-right: 28px
+		margin-right: 95px
 		+r(1219)
 			margin-right: 18px
 		+r(1023)
@@ -86,34 +90,33 @@
 			max-width: 100%
 			margin-right: 0
 	&-list
-		margin-top: 40px
+		margin-top: 30px
 		+r(1219)
 			margin-top: 26px
 		+r(1023)
 			margin-top: 20px
 			display: flex
 			justify-content: center
-			margin-bottom: 60px
+			margin-bottom: 40px
 		+r(767)
 			flex-direction: column
 			max-width: 340px
 			margin-left: auto
 			margin-right: auto
-			margin-bottom: 25px
+			margin-bottom: 20px
 			margin-top: 15px
 		+r(639)
-			margin-bottom: 45px
+			margin-bottom: 25px
 		&__item
-			padding-left: 63px
-			color: #353434
-			font-size: 20px
+			padding-left: 57px
+			font-size: 22px
 			font-weight: 700
-			line-height: 25px
+			line-height: 24px
 			position: relative
 			+r(1023)
-				font-size: 19px
+				font-size: 16px
 				line-height: normal
-				padding-left: 54px
+				padding-left: 44px
 			+r(767)
 				padding-left: 0
 				padding-top: 40px
@@ -125,11 +128,11 @@
 			&::before
 				content: ''
 				position: absolute
-				top: 2px
+				top: 4px
 				left: 2px
 				background: url(../img/check.png) no-repeat center
-				width: 42px
-				height: 42px
+				width: 31px
+				height: 18px
 				+r(1023)
 					top: 0
 				+r(767)
@@ -153,27 +156,28 @@
 					margin-right: 0
 			&--small 
 				color: #444
-				font-size: 20px
+				font-size: 18px
 				font-weight: 400
 				display: block
 				+r(1023)
 					font-size: 16px
 					display: inline
 	&__quality 
-		margin-top: 57px
-		margin-bottom: 58px
+		margin-top: 70px
+		margin-bottom: -49px
 		+r(1219)
 			margin-top: 30px
-			margin-bottom: 70px
+			margin-bottom: -27px
 		+r(1023)
 			position: relative
-			margin-left: -40px
+			margin-left: 0px
 			margin-bottom: 0px
 			+r(1023)
 				display: none
 		+r(767)
-			margin-left: 30px
+			margin-left: 0px
 			margin-top: 110px
+			max-width: 300px
 			margin-bottom: -0px
 		+r(639)
 			margin-top: 15px
@@ -204,35 +208,36 @@
 			margin-top: 10px
 		&__pack
 			position: absolute
-			bottom: 0px
-			right: -109px
+			bottom: -152px
+			right: 31px
 			+r(1219)
 				bottom: -70px
-				max-width: 230px
-				right: -98px
+				max-width: 340px
+				right: 27px
 			+r(1023)
 				position: static
 				margin-left: auto
 				margin-right: auto
 			+r(767)
-				width: 333px
+				width: 290px
 			+r(479)
 				width: 100%
-				max-width: 220px
+				max-width: 260px
 			&::before
 				content: ''
 				position: absolute
-				top: -29px
-				left: 38px
+				top: -48px
+				left: 23px
 				background: url(../img/quality-pack.png) no-repeat center / contain
-				width: 90px
-				height: 90px
+				width: 104px
+				height: 108px
 				border-radius: 50%
 			
 				+r(1219)
 					width: 80px
 					height: 80px
 					left: 27px
+					top: -31px
 					background-size: contain
 				+r(1023)
 					left: 35px
@@ -243,13 +248,14 @@
 			display: none
 			+r(1023)
 				display: block
-				margin-top: 10px
+				margin-top: 20px
 			+r(639)
 				display: flex
 				justify-content: center
-				margin-bottom: 30px
+				margin-bottom: 10px
 	&__form
 		order: 3
+		margin-top: 8px
 .last-block
 	+rm(1024)
 		padding-top: 60px
