@@ -7,7 +7,7 @@
 		background-color: #ffffff;
 		font-family: "PT sans";
     &__wrapper{
-        padding: 26px 22px 0px;
+        padding: 20px 20px 0px;
         position: relative;
      
     }
@@ -38,7 +38,7 @@
     }
 
     &__subtitle{
-        margin: 13px 0 14px 0px;
+        margin: 9px 0 20px 0px;
         font-size: 18px;
         line-height: 1px;
         text-align: center;
@@ -59,7 +59,7 @@
         img{
             position: absolute;
             top: 50%;
-            left: 20px;
+            left: 17px;
             transform: translateY(-50%);
         }
     }
@@ -160,7 +160,7 @@ margin-right: 14px;
   border-radius: 5px;
   background-color: #eef2f7;
   border: none;
-  padding: 17.5px 10px 17.5px 50px;
+  padding: 19.5px 10px 20.5px 50px;
   width: 100%;
 	color: #666666;
 	border: 1px solid #dfe2e3;
@@ -187,7 +187,7 @@ line-height: 1;
 	font-weight: 500;
 	color: #47342e;
 	font-size: 16px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .form__price_current{
 
