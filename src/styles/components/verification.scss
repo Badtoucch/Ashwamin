@@ -1,0 +1,126 @@
+
+.verification {
+  padding: 80px 0 90px;
+}
+.attention {
+  border-radius: 3px;
+  background-color: #e96e0a;
+  padding: 3px 9px;
+  color: #fff;
+}
+p.attention {
+  padding: 10px 28px;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.verification-result {
+  display: flex;
+  margin: 58px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.verification-result__item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 32%;
+}
+.verification-result__info {
+  margin-right: 24px;
+  width: 125px;
+  height: 125px;
+  min-width: 125px;
+  min-height: 125px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.verification-result__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.verification .sub-title {
+  text-align: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 1023px) {
+  .verification-result {
+    margin: 40px;
+  }
+  .verification-result__info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .verification-result__title {
+    text-align: center;
+    font-size: 19px;
+  }
+  .verification-result {
+    align-items: flex-start;
+  }
+  .verification-result__item {
+    flex-direction: column-reverse;
+  }
+  .verification .sub-title {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .verification-result {
+    margin: 30px;
+  }
+  .verification-result__title {
+    font-size: 18px;
+  }
+  .verification .sub-title {
+    line-height: 1.45;
+  }
+  .verification .sub-title {
+    margin-top: 28px;
+  }
+  p.attention {
+    padding: 10px;
+  }
+}
+@media (max-width: 639px) {
+  .verification-result {
+    flex-direction: column;
+  }
+  .verification-result__item {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .verification-result__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .verification-result__title {
+    text-align: left;
+  }
+  .verification-result__info {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 479px) {
+  .verification-result {
+    margin: 25px;
+  }
+  .verification-result__info {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    margin-right: 15px;
+  }
+  .verification .sub-title {
+    margin-top: 25px;
+  }
+  .verification-result__title {
+    font-size: 16px;
+  }
+}
