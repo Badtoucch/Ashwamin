@@ -1,0 +1,128 @@
+.doctor
+	padding-top: 77px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 1170px
+		height: 1px
+		background-color: #e8e8e8
+	+rm(1024)
+		padding-bottom: 0 !important
+	.container
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 29px
+			background: url(../img/doctor.png) no-repeat center / contain
+			width: 498px
+			height: 710px
+			+r(1219)
+				background-size: contain
+				width: 424px
+				height: 585px
+				left: 17px
+			+r(1023)
+				display: none
+	&__subtitle
+		font-size: 28px
+		font-weight: 700
+		line-height: 1
+		margin-top: 31px
+		text-align: center
+		+r(1219)
+			font-size: 21px
+			margin-top: 13px
+		+r(1023)
+			font-size: 20px
+			margin-top: 10px
+		+r(767)
+			font-size: 18px
+			line-height: normal
+		+r(479)
+			margin-top: 5px
+			font-size: 17px
+			padding-left: 5px
+			padding-right: 5px
+	&-info
+		max-width: 580px
+		margin-top: 53px
+		margin-left: auto
+		margin-right: 19px
+		+r(1219)
+			margin-top: 40px
+			max-width: 520px
+		+r(1023)
+			margin-top: 20px
+			max-width: 100%
+		+r(767)
+			margin-top: 15px
+		+r(639)
+			margin-top: 10px
+		+r(479)
+			padding-left: 5px
+			padding-right: 5px
+			margin-right: 0
+	&__text 
+		font-size: 18px
+		font-weight: 400
+		line-height: 26px
+		margin-bottom: 26px
+		+r(1219)
+			margin-bottom: 10px
+			line-height: 26px
+			br
+				display: none
+		+r(1023)
+			font-size: 17px
+			line-height: 24px
+		+r(639)
+			font-size: 16px
+	&-sign
+		margin-top: 58px
+		position: relative
+		display: flex
+		align-items: flex-end
+		padding-bottom: 99px
+		+r(1219)
+			margin-top: 20px
+			padding-bottom: 60px
+			padding-top: 30px
+		+r(1023)
+			padding-bottom: 0
+		+r(639)
+			padding-top: 25px
+			margin-top: 15px
+			align-items: flex-start
+	&__name
+		font-size: 28px
+		font-weight: 700
+		margin-bottom: 14px
+		line-height: 1
+		+r(1023)
+			margin-bottom: 7px
+			font-size: 24px
+		+r(639)
+			font-size: 22px
+		+r(479)
+			font-size: 20px
+	&__prof
+		margin-bottom: 0px
+		font-size: 17px
+		+r(1023)
+			margin-bottom: 10px
+			font-size: 16px
+	&-box
+		margin-left: 27px
+		+r(1023)
+			margin-left: 15px
+	&-sert
+		+r(1219)
+			max-width: 130px
+		+r(639)
+			max-width: 90px
