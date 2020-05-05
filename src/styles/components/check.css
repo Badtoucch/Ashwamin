@@ -1,0 +1,130 @@
+.check {
+  padding: 80px 0 90px;
+}
+.color-red {
+  color: #f92222;
+}
+.tdund {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.check .attention {
+  font-weight: bold;
+  text-align: left;
+  padding: 17px 25px;
+  margin: 1em auto;
+  font-size: 20px;
+}
+.check-info {
+  display: flex;
+  margin-top: 50px;
+}
+.check-info__text {
+  width: 55%;
+}
+.check-info__text p {
+  line-height: 1.45;
+}
+.check-info__img {
+  width: 45%;
+}
+.info-img-wrap {
+  width: fit-content;
+  margin-left: 50px;
+  margin-right: auto;
+  position: relative;
+  margin-top: 30px;
+}
+.info-img-wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -80px;
+  top: -85px;
+  width: 215px;
+  height: 215px;
+  background: url("../img/code.png");
+  background-size: contain;
+  background-position: center;
+}
+.block-shadow {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+}
+.block-shadow p:not(:last-child) {
+  margin-bottom: 1em;
+}
+@media (max-width: 1023px) {
+  .check-info {
+    flex-direction: column-reverse;
+  }
+  .check-info__img,
+  .check-info__text {
+    width: 100%;
+  }
+  .info-img-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .check-info__text {
+    margin-top: 40px;
+  }
+  .check-info__img {
+    margin-top: 40px;
+  }
+  .check-info {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .check-info__text {
+    margin-top: 30px;
+  }
+  .check-info__img {
+    margin-top: 30px;
+  }
+  .check-info {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 639px) {
+  .info-img-wrap {
+    width: 70%;
+  }
+  .check .title {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 479px) {
+  .block-shadow {
+    padding: 10px;
+  }
+  .check p.attention {
+    padding: 10px;
+    line-height: 1.2;
+  }
+  .check-info {
+    margin-top: 25px;
+  }
+  .check-info__text {
+    margin-top: 25px;
+  }
+  .check-info__img {
+    margin-top: 0px;
+  }
+  .info-img-wrap:before {
+    width: 150px;
+    height: 150px;
+    right: -50px;
+    top: -35px;
+  }
+}
