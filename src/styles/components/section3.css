@@ -10,9 +10,16 @@ strong {
   width: 50%;
 }
 .prod-info__desc p {
-  margin-bottom: 1em;
   line-height: 1.45;
   text-align: justify;
+}
+.prod-info__desc p:not(:last-child) {
+  margin-bottom: 1em;
+}
+@media (max-width: 767px) {
+  .prod-info__desc p:last-child {
+    margin-bottom: 1em;
+  }
 }
 .prod-info__img img {
   margin-top: -28px;
