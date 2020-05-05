@@ -11,7 +11,9 @@
 @import "components/hit";
 @import "components/section2.scss";
 @import "components/update";
-@import "components/footer";
+@import "components/section3.scss";
+@import "components/efficiency.scss";
 
+@import "components/footer";
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";
