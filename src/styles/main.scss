@@ -9,10 +9,15 @@
 @import "components/header";
 @import "components/promo";
 @import "components/hit";
-@import "components/footer";
 @import "components/section2.scss";
+@import "components/update";
 @import "components/section3.scss";
 @import "components/efficiency.scss";
+<<<<<<< HEAD
 @import "components/verification.scss";
+=======
+
+@import "components/footer";
+>>>>>>> 1f21968b3eaa00bcdcdeec8f1f301907f605a8b6
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";
