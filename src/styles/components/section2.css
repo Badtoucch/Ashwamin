@@ -1,5 +1,5 @@
-.section2 {
-  padding: 81px 0;
+.effects {
+  padding: 80px 0 90px;
 }
 .invasion-effects {
   display: flex;
@@ -26,7 +26,6 @@
   margin-top: 36px;
 }
 .effects__item-list li {
-  font-size: 18px;
   line-height: 1.15;
   position: relative;
   padding-left: 20px;
@@ -52,9 +51,6 @@
   .effects__item-list li {
     padding-right: 5px;
   }
-  .section2 {
-    padding: 40px 0;
-  }
   .effects__item-list {
     margin-top: 20px;
   }
@@ -69,9 +65,6 @@
   }
 }
 @media (max-width: 767px) {
-  .section2 {
-    padding: 30px 0;
-  }
   .invasion-effects {
     flex-direction: column;
     align-items: center;
