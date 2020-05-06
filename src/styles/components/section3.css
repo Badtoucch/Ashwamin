@@ -19,7 +19,49 @@ strong {
 .prod-info__desc p {
   font-size: 18px;
   line-height: 1.45;
-  text-align: justify;
+}
+.br2 {
+  display: none;
+}
+.br3 {
+  display: none;
+}
+@media (max-width: 1219px) {
+  .br1 {
+    display: none;
+  }
+  .br2 {
+    display: block;
+  }
+}
+@media (max-width: 1023px) {
+  .br3 {
+    display: block;
+  }
+  .br2 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .br3 {
+    display: none;
+  }
+  .br2 {
+    display: block;
+  }
+}
+@media (max-width: 639px) {
+  .br1 {
+    display: none;
+  }
+  .br3 {
+    display: block;
+  }
+}
+@media (max-width: 479px) {
+  .br2 {
+    display: none;
+  }
 }
 .prod-info__desc p:not(:last-child) {
   margin-bottom: 1em;

@@ -80,7 +80,11 @@
     }
   }
 }
-
+@media (max-width: 639px) {
+  .efficiency-info__text p {
+    text-align: center;
+  }
+}
 @media (max-width: 479px) {
   .efficiency-info {
     border: 15px solid #f6efdc;

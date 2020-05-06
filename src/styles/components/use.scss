@@ -30,6 +30,9 @@
 .use-info__text {
   width: 50%;
 }
+.nowrap {
+  white-space: nowrap;
+}
 .use-info__item {
   position: relative;
   padding-left: 125px;
@@ -131,7 +134,7 @@
 }
 @media (max-width: 479px) {
   .use-info__img .img_wrap {
-      width: 70%;
+      width: 50%;
   }
   .use-info {
     flex-direction: column;
@@ -142,8 +145,10 @@
   .use-info__item {
     min-height: 50px;
     padding-left: 70px;
+    font-size: 17px;
+    padding-left: 60px;
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
     &:before {
       width: 50px;
@@ -154,5 +159,7 @@
 
 }
 @media (max-width: 375px) {
-
+  br.mdn {
+    display: none;
+  }
 }
