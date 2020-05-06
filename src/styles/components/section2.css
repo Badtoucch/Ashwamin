@@ -66,6 +66,9 @@
   }
 }
 @media (max-width: 767px) {
+  .dn_767 {
+    display: none;
+  }
   .invasion-effects {
     flex-direction: column;
     align-items: center;
@@ -90,11 +93,21 @@
     margin-bottom: 15px;
   }
 }
+@media (max-width: 639px) {
+  .effects__item {
+    width: 80%;
+  }
+}
 @media (max-width: 480px) {
   .effects__item {
-    width: 100%;
+    width: 80%;
   }
   .effects__item img {
     margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .effects__item {
+    width: 100%;
   }
 }

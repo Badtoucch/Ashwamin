@@ -66,6 +66,9 @@
   }
 }
 @media (max-width: 767px) {
+  .efficiency-info__content {
+    margin-top: 0;
+  }
   .efficiency-info {
     margin-bottom: 30px;
     padding: 30px;
@@ -88,7 +91,13 @@
   }
   .efficiency-certificates__img {
     margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 34%;
+    }
   }
+
 }
 
 

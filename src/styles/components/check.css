@@ -24,6 +24,7 @@
 }
 .check-info__text p {
   line-height: 1.45;
+  font-size: 18px;
 }
 .check-info__img {
   width: 45%;
