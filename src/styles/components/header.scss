@@ -2,6 +2,9 @@
   background-color: #ea5b0c;
 position: relative;
 z-index: 5;
+.timer__colon{
+	color: #fff;
+}
   &__wrap {
     padding: 16px 0 19px;
     display: flex;

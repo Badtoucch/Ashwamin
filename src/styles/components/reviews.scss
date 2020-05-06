@@ -22,8 +22,10 @@
 		padding: 20px;
 	 }
 	 @include r(479) {
-		padding: 15px;
-		padding-top: 19px;
+		padding: 19px 10px 15px 15px;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	 }
   }
   &-panel {
@@ -66,10 +68,13 @@
 			height: 530px;
 		 }
 		 @include r(767) {
-			height: 450px;
+			height: 460px;
+		 }
+		 @include r(639) {
+			height: 720px;
 		 }
 		 @include r(479) {
-			height: 470px;
+			height: 710px;
 		 }
     &-item {
       padding-bottom: 42px;
