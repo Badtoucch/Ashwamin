@@ -29,7 +29,8 @@
     position: relative;
     padding-left: 20px;
     padding-right: 30px;
-    margin-bottom: 18px;
+    margin-bottom: 1em;
+    font-size: 18px;
     &::before {
       content: '';
       display: block;

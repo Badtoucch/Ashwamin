@@ -13,6 +13,7 @@ strong {
   width: 50%;
 }
 .prod-info__desc p {
+  font-size: 18px;
   line-height: 1.45;
   text-align: justify;
 }
@@ -32,6 +33,7 @@ strong {
   margin-bottom: 1em;
 }
 .prod-info__list li {
+  font-size: 18px;
   padding-left: 20px;
   font-weight: bold;
   position: relative;
