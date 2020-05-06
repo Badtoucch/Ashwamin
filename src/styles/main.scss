@@ -17,9 +17,12 @@
 @import "components/efficiency.scss";
 @import "components/verification.scss";
 @import "components/doctor";
+@import "components/reviews";
 @import "components/use.scss";
 @import "components/order-info.scss";
 @import "components/check.scss";
 @import "components/footer";
+@import "components/popup";
+@import "components/wPopup";
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";

@@ -90,7 +90,7 @@
 	content: '';
 	width: 4px;
 	height: 12px;
-	background: repeating-linear-gradient(0deg, #48afcd 0, #48afcd 3px, #fff 3px, #fff 4px);
+	background: repeating-linear-gradient(0deg, #a2a2a2 0, #a2a2a2 3px, #fff 3px, #fff 4px);
 	position: absolute;
 	top: 50%;
 	margin-top: -3.5px;
@@ -248,7 +248,7 @@
 	background-color: #ffffff;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-	background-color: #48afcd
+	background-color: #a2a2a2
 }
 .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp {
 	background-repeat: no-repeat

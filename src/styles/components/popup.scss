@@ -1,0 +1,179 @@
+.my-popup {
+  .main__form {
+    @include r(1023) {
+      margin-bottom: 0;
+    }
+  }
+	.promo__subtitle{
+		font-size: 18px;
+		line-height: normal;
+		margin-bottom: 20px;
+		padding: 10px 0;
+	}
+	.form-sale{
+		@include r(400) {
+      top: -45px;
+      left: -30px;
+    }
+	}
+
+  .form__approved {
+    @include r(1299) {
+      padding: 3px 0 3px 60px;
+      background-position: 12px 50%;
+    }
+
+    @include r(999) {
+      padding-left: 40px;
+      background-position: 0 50%;
+    }
+  }
+}
+.ever-popup__close{
+	right: -17px !important;
+	@include r(479) {
+		right: -10px !important;
+	}
+}
+.my-popup__wrap {
+  width: 845px;
+  margin: 0 auto;
+  padding: 20px 40px 20px ;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  border-radius: 5px;
+	background-color: #f4f4f4;
+
+  @include r(999) {
+    width: 300px;
+    padding: 20px 0 15px;
+  }
+
+  .reviews-amount {
+    display: none;
+	}
+	.main-form {
+		margin-bottom: 10px;
+		padding-top: 15px;
+	}
+	.main-form__field{
+		margin-bottom: 10px;
+	}
+	.main-form__title{
+		margin-bottom: 5px;
+	}
+	.my-popup__quality {
+		right: 0;
+		top: 50px;
+transform: none;
+left: auto;
+width: 80px;
+height: 80px;
+	}
+}
+
+.my-popup__pack {
+  max-width: 305px;
+  padding-bottom: 0px;
+	position: relative;
+	margin-left: -40px;
+}
+
+.my-popup__left {
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+  @include r(999) {
+    display: none;
+  }
+}
+
+.my-popup__right {
+  margin-left: 25px;
+
+  @include r(999) {
+    margin-left: 0;
+  }
+}
+
+.my-popup__quality {
+  position: absolute;
+  left: -42px;
+	top: -63px;
+	width: 100px;
+}
+
+.ever-popup {
+  z-index: 121 !important;
+}
+
+.ever-popup__inner {
+  max-width: 830px !important;
+  margin-top: 0 !important;
+
+  @include r(999) {
+    width: 300px !important;
+  }
+
+  @media (max-height: 699px) {
+    margin-top: 40px !important;
+  }
+}
+
+.ever-popup__close:after,
+.ever-popup__close:before {
+  top: 14px !important;
+  right: -36px !important;
+  height: 4px !important;
+  border-radius: 20px;
+
+  @include r(999) {
+    top: 15px !important;
+    right: 0 !important;
+  }
+}
+
+.ever-popup.show {
+  display: flex !important;
+
+  @media (max-height: 699px) {
+    display: block !important;
+  }
+}
+@media (max-width: 1330px){
+	.my-popup{
+		
+		.form__wrapper{
+			padding-top: 15px;
+		
+		}
+		.form__subtitle{
+			margin: 10px 0 10px; 
+		}
+		.form__name, .form__phone{
+			margin-bottom: 10px;
+		}
+		.form-btn{
+			margin-top: 10px;
+		}
+		.input{
+			padding: 18.5px 10px 18.5px 50px;
+			border-radius: 6px;
+		}
+		.btn{
+			font-size: 26px;
+			padding: 7px 0 7px;
+			border-radius: 6px;
+		}
+		.form__text{
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.form__attention{
+			margin-bottom: 10px;
+		}
+	}
+}
