@@ -7,7 +7,10 @@
 	display: none;
   z-index: 95;
   padding: 9px 0 ;
-  width: 100%;
+	width: 100%;
+	.timer__colon{
+		color: #fff;
+	}
   @include r(767) {
     padding: 5px 0 7px;
   }
