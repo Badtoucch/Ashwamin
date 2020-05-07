@@ -22,7 +22,10 @@
   .btndiv {
 		display: flex;
 		margin-left: 30px;
-    flex-direction: column;
+		flex-direction: column;
+		@include r(767) {
+			margin-left: 10px;
+		}
     .order-snos {
       display: flex;
       justify-content: center;
