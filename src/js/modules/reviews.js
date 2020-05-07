@@ -2,7 +2,16 @@ export default () => {
   $(".reviews-item__btn").on("click", function() {
     $(this)
       .parent()
-      .toggleClass("active");
+			.toggleClass("active");
+			
+			if (!$(this).data('status')) {
+				$(this).html('Скрыть отзыв');
+				$(this).data('status', true);
+			}
+			else {
+				$(this).html('Прочитать весь отзыв');
+				$(this).data('status', false);
+			}
   });
   (function($) {
     $(window).on("load", function() {
